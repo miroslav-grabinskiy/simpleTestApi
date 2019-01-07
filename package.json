@@ -1,0 +1,27 @@
+{
+  "name": "simpletestapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start_dev": "nodemon index.js",
+    "codestyle": "eslint -f checkstyle ./",
+    "codestyle_dev": "eslint ./",
+    "migrate-mysql": "./node_modules/.bin/sequelize db:migrate",
+    "migrate-mysql-undo": "./node_modules/.bin/sequelize db:migrate:undo"
+  },
+  "author": "miroslav.grabinskiy@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.23.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.9"
+  }
+}

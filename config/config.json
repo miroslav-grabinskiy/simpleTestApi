@@ -1,0 +1,11 @@
+{
+  "port": 3333,
+  "host": "localhost",
+  "mysql": {
+    "host": "localhost",
+    "user": "root",
+    "password": "password",
+    "database": "theme_db",
+    "connectionLimit": 10
+  }
+}
